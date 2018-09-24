@@ -27,9 +27,9 @@ public class Puzzle	{
 			System.out.println("==========\nAmazing! Let's begin.");
 		}	else if (ans == 'a') {
 			System.out.println("==========\nGood! But I hope you could use CAPITAL letter next time.");
-		}	else if (ans == 'b' || ans == 'B')	{
+		}	else if (answer.equalsIgnoreCase("B"))	{
 			System.out.println("==========\nWell I mean, you did it! At least you didn't hang me to dry.");
-		}	else if (ans == 'E') {
+		}	else if (answer.equalsIgnoreCase("E")) {
 			System.out.println("==========\nOkay. Nice talking with you, " + user + ".");
 			System.exit(0);
 		}	else  {
@@ -39,16 +39,15 @@ public class Puzzle	{
 		answer = scan.next();
 		ans = answer.charAt(0);
 		while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'c' && ans != 'C')	{
-			if (ans == 'E')	{
+			if (answer.equalsIgnoreCase("E"))	{
 				System.out.println("==========\nOkay. Nice talking with you, " + user + ".");
 				System.exit(0);
 			}
 			System.out.print(user + ". Just type A, B, C please! \n--> ");
 			answer = scan.next();
-			ans = answer.charAt(0);
-		}	if (ans == 'B' || ans == 'b')	{
+		}	if (answer.equalsIgnoreCase("B"))	{
 			System.out.println("==========\nOk. Let me tell you why I chose this program.");
-		}	else if (ans == 'C' || ans == 'c') {
+		}	else if (answer.equalsIgnoreCase("C")) {
 			System.out.println("==========\nWhat a sad news :( I still wanna show you more. \nFarewell " + user + ".");
 			System.exit(0);
 		}
@@ -77,7 +76,7 @@ public class Puzzle	{
 			answer = scan.next();
 			ans = answer.charAt(0);
 		} //'Oh, how so? 
-			if (ans == 'A' || ans == 'a')	{
+			if (answer.equalsIgnoreCase("a"))	{
 				System.out.print("==========\nEveryone is so smart, and I just don't want to be the one who is below average. \nMy normal day goes like this: Class (Study) -> Tutorial Center (Assignments) -> Dorm (Sleep). \nI found my life sad. \nI swear I will not take anymore programming course at school anymore. \nA. So you don't want to code anymore? \nB. So you want to be an auditor? \nC. So you are lost. \n--> ");
 				answer = scan.next();
 				ans = answer.charAt(0);
@@ -88,12 +87,11 @@ public class Puzzle	{
 				}
 				System.out.print(user + ". Just type A, B, C please! \n--> ");
 				answer = scan.next();
-				ans = answer.charAt(0);
 				} // So you don't want to code anymore? 
-				if (ans == 'A' || ans == 'a')	{
+				if (answer.equalsIgnoreCase("a"))	{
 					System.out.print("==========\nI didn't, but I still wanted to be in the tech industry. \nTherefore, I wanted to learn about UI/UX design. \n");
 				} //So you want to be an auditor? 
-				else if (ans == 'B' || ans == 'b')	{
+				else if (answer.equalsIgnoreCase("b"))	{
 					System.out.print("==========\nI don't. I just don't see myself siting all day and night, auditing. \nI thought UI/UX design would be a cool thing, so ");
 				} //So you are lost
 				else  {
@@ -129,9 +127,9 @@ public class Puzzle	{
 				answer = scan.next();
 				ans = answer.charAt(0);
 			}
-			if (ans == 'A' || ans == 'a') {
+			if (answer.equalsIgnoreCase("a")) {
 				System.out.println("==========\nAww thanks for having faith in me. It means so much to me.");
-			}	else if (ans == 'B' || ans == 'b')	{
+			}	else if (answer.equalsIgnoreCase("b"))	{
 				System.out.println("==========\nYe, you are right. I am trying to learn how to code a game in java.");
 			}	else  {
 				System.out.println("==========\nHaha! Probably, but tbh Java is good for beginners like me. Python is definitely on my to-learn list after I master Java.");
@@ -150,12 +148,11 @@ public class Puzzle	{
 				}
 				System.out.print(user + ". Just type A, B, C please! \n--> ");
 				answer = scan.next();
-				ans = answer.charAt(0);
 				} //Therefore, you want to code.
-				if (ans == 'A' || ans == 'a')	{
+				if (answer.equalsIgnoreCase("a"))	{
 					System.out.print("==========\nI didn't, at the beginning, because I spent so many hours for a single question on assignments, and I did poorly on exams. \n");
 				} //Therefore, you want to do tax.
-				else if (ans == 'B' || ans == 'b')	{
+				else if (answer.equalsIgnoreCase("b"))	{
 					System.out.print("==========\nHmm, not really. Tax is just like audit during the peak season. \n");
 				} //Therefore, you are lost.
 				else  {
